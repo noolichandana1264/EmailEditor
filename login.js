@@ -6,7 +6,7 @@ function onSignIn(googleUser) {
   console.log("Email: " + profile.getEmail());
   setDummyData(profile.getName(), profile.getEmail(), profile.getImageUrl());
   console.log("going");
-  window.location.href = "https://chandana1264.myshopify.com/admin/apps";
+  location.assign("https://chandana1264.myshopify.com/admin/apps");
 }
 
 let loginLink = document.getElementById("login-link");
