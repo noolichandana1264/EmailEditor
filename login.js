@@ -13,10 +13,19 @@ let loginLink = document.getElementById("login-link");
 loginLink.addEventListener(
   "click",
   setDummyData(
-    "Bhairav Reddy",
-    "tbhairavreddy@gmail.com",
-    "https://bhairavreddy67.github.io/Imgaes/profile_pic.jpeg"
+    "Chandana",
+    "noolichandana1264@gmial.com",
+    "noting"
   )
 );
+
+function setDummyData(name, email, imageUrl) {
+  let obj = {
+    name: name,
+    email: email,
+    profileImageUrl: imageUrl,
+  };
+  localStorage.setItem("currentUser", JSON.stringify(obj));
+}
 
 
